@@ -14,6 +14,6 @@ npm start
 ## 目录
 ./index.js 入口文件  
 ./config.js 路径设置  
-./template/*.pug Pug模板  
-./template/*.styl Stylus模板  
-./data/*.json 填充数据  
+./template/\*.pug Pug模板  
+./template/\*.styl Stylus模板  
+./data/\*.json 填充数据  
