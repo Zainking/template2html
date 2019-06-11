@@ -1,0 +1,30 @@
+doctype html
+html(lang="zh-cn")
+  head
+    title=pageTitle
+  style #{__style}
+div#resume
+  TopBar(title='简历')
+  img.avatar(src=avatarUrl)
+  h3.name #{name}
+  p.infomation #{college} | #{birthday} | #{city}
+  h3.title 教育背景
+  ul
+    each val in degree
+      li
+        p.itemTitle #{val[0]}
+        p.itemInfo #{val[1]}
+  h3.title 工作经历
+  ul
+    each val in workExperience
+      li
+        p.itemTitle #{val[0]}
+        p.workTime #{val[1]}
+        p.itemInfo #{val[2]}
+  h3.title 校内技术经历
+  ul
+    each val in schoolExperience
+      li
+        p.itemTitle #{val[0]}
+        p.workTime #{val[1]}
+        p.itemInfo #{val[2]}

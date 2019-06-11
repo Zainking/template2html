@@ -1,0 +1,116 @@
+*
+  margin 0
+  padding 0
+  -webkit-tap-highlight-color transparent
+
+body
+  margin 0 auto
+  font-family Microsoft Yahei, SF Pro SC, HanHei SC, SF Pro Text, Myriad Set Pro, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+  font-size .95em
+  letter-spacing 2px
+  display -webkit-box
+  display -ms-flexbox
+  display flex
+  -webkit-box-align center
+  -ms-flex-align center
+  align-items center
+  -webkit-box-pack center
+  -ms-flex-pack center
+  justify-content center
+  max-width 640px
+  width 100%
+
+#resume
+  .print-c
+    display flex
+    justify-content flex-end
+    .print
+      font-size 0.9em
+      color #888
+      cursor pointer
+  .github
+    margin-left auto
+    font-size 0.9em
+    color #888
+    text-decoration none
+  .pr-mode
+    display none
+  ul
+    list-style none
+    padding-left 5px
+    margin-bottom 50px
+    li
+      line-height 2
+      .skillLevel
+        float right
+      .itemTitle
+        font-weight 700
+        margin-top 10px
+      .itemInfo
+        font-size 0.9em
+        margin-bottom 30px
+        text-indent 2em
+      .workTime
+        font-size 0.8em
+        color #888
+  .avatar
+    width 150px
+    height 150px
+    border-radius 50%
+    padding 5px
+    border 3px solid #eee
+    display block
+    margin 0 auto
+    transition all 2s
+    &:hover
+      border-color #ffa500
+  .wechat
+    width 200px
+    padding 5px
+    display block
+    margin 0 auto
+  h3
+    font-size 1.2em
+    font-weight 400
+    &.name
+      text-align center
+      margin 10px 0
+    &.title
+      background-color #ffa500
+      padding 5px
+  .infomation
+    text-align center
+    color #777
+    margin-bottom 20px
+  .projects
+    display block
+    color #777
+    font-size 1.5em
+    text-align center
+    padding 20px
+    text-decoration none
+    transition all 0.4s
+    margin-bottom 30px
+    &:hover
+      color #ffa500
+
+@media print
+  #resume
+    .print-c
+      .print
+        display none
+    .pr-mode
+      display inline
+    .show-mode
+      display none
+
+#resume .print-c .print:active,
+        #resume .print-c .print:hover,
+        #resume .print-c .github:active,
+        #resume .print-c .github:hover
+  color #ffa500
+
+#resume ul li .skillName,
+        #resume ul li .skillLevel
+  font-size 0.9em
+

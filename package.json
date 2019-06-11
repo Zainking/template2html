@@ -1,0 +1,19 @@
+{
+  "name": "template2html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Zain",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "@types/pug": "^2.0.4",
+    "@types/stylus": "^0.48.31"
+  }
+}

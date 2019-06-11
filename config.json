@@ -1,0 +1,6 @@
+{
+    "pugPath": "./template/index.pug",
+    "stylPath": "./template/style.styl",
+    "dataPath": "./data/0.json",
+    "outputPath": "./dist"
+}
